@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  app:
+    image: your_image_name:latest
+    ports:
+      - "8080:80"
+    environment:
+      - ENV_VAR_NAME=value
+    volumes:
+      - ./app:/app
+    restart: always
